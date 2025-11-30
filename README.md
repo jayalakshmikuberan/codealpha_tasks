@@ -1,94 +1,141 @@
 # codealpha_tasks
-📘 CodeAlpha Internship
-🕸️ Task: Web Scraping + Exploratory Data Analysis (EDA)
-📅 Domain: Data Analytics
-🛠️ Tools Used: Python, Pandas, BeautifulSoup, Matplotlib, Seaborn
-<br>
-⭐ Project Overview
+📘 CodeAlpha Data Analytics Internship
+✅ Tasks Completed: Web Scraping + EDA + Data Visualizations
+🗂️ Domain: Data Analytics
+🛠️ Tools: Python, Pandas, BeautifulSoup, Requests, Matplotlib, Seaborn
+🌟 Project Overview
 
-This project completes two tasks from the CodeAlpha Data Analytics Internship:
+This repository contains the implementation of three tasks from the CodeAlpha Data Analytics Internship program:
 
-✔ Task 1 — Web Scraping
+1️⃣ Task 1 – Web Scraping
+2️⃣ Task 2 – Exploratory Data Analysis (EDA)
+3️⃣ Task 3 – Data Visualization
 
-Extracted data from a sample website (Books listing) using Python libraries like Requests and BeautifulSoup.
-The scraped data was saved into a CSV file for further analysis.
+The project involves scraping data from a sample website, cleaning and analyzing the data, and creating visualizations to extract insights.
 
-✔ Task 2 — Exploratory Data Analysis (EDA)
-
-Performed data cleaning, conversion of text to numeric values, summary statistics, and created visualizations to understand patterns in the data.
-
-📌 Project Structure
-CodeAlpha_WebScraping_EDA/
+📁 Project Structure
+CodeAlpha_DataAnalytics_Project/
 │
-├── scrape.py               # Web scraping script
-├── eda.py                  # Data analysis script
-├── scraped_data.csv        # Scraped dataset
-├── README.md               # Project documentation
-└── visuals/
-      └── price_distribution.png   # EDA chart
+├── scrape.py                     # Task 1: Web Scraping
+├── eda.py                        # Task 2: Exploratory Data Analysis
+├── data_visualization.py         # Task 3: Visualizations
+│
+├── scraped_data.csv              # Dataset generated from scraping
+│
+├── visuals/                      # All graphs from Task 3
+│     ├── price_distribution.png
+│     ├── top10_books.png
+│     └── price_boxplot.png
+│
+└── README.md                     # Project Documentation
 
-🕸️ Web Scraping Details
+🕸️ Task 1 — Web Scraping
+✔️ What was done?
 
-Website used: Books to Scrape (or your chosen website)
+Used Requests and BeautifulSoup to scrape data from a sample book website.
 
-Extracted fields:
+Extracted:
 
 Book Title
 
-Price
+Book Price
 
-Cleaned and stored data in scraped_data.csv.
+Cleaned the data and stored it in a CSV file:
+scraped_data.csv
 
-📊 EDA Highlights
+✔️ Purpose of this task:
 
-Performed the following:
+To gather real-world data automatically for analysis.
 
-✔ Data Cleaning
+📊 Task 2 — Exploratory Data Analysis (EDA)
+✔️ Key Steps:
 
-Removed unwanted characters (Â, Ã, £, etc.)
+Loaded the scraped dataset using Pandas
 
-Converted prices into proper numeric format
+Cleaned price column using regex to fix:
 
-Handled encoding issues using regex
+Â
 
-✔ Data Insights
+Ã
 
-Calculated price distribution
+£
 
-Summary statistics (mean, median, count)
+Other encoding issues
 
-Visualized price distribution using histogram
+Converted price to numeric format
 
-📈 Visualization
+Performed:
 
-A histogram showing the distribution of book prices was created using matplotlib.
+Summary statistics
 
-Example:
+Data structure check
 
-Price Distribution Graph
+Missing value handling
 
+✔️ Insights observed:
 
-(Place your actual screenshot in the visuals folder.)
+Spread of price values
 
-🚀 How to Run This Project
-Step 1: Install Required Libraries
+Average price
+
+Most common price range
+
+Outlier detection
+
+📈 Task 3 — Data Visualization
+
+Three important visualizations were created:
+
+1️⃣ Price Distribution (Histogram)
+
+Shows how book prices are spread across the dataset.
+
+📌 File: visuals/price_distribution.png
+
+2️⃣ Top 10 Most Expensive Books (Bar Chart)
+
+Displays the highest-priced books.
+
+📌 File: visuals/top10_books.png
+
+3️⃣ Price Spread (Box Plot)
+
+Identifies:
+
+Outliers
+
+Price variation
+
+Median and quartiles
+
+📌 File: visuals/price_boxplot.png
+
+🚀 How to Run the Complete Project
+🔧 Install Dependencies:
 pip install requests beautifulsoup4 pandas matplotlib seaborn
 
-Step 2: Run Web Scraping
+▶️ Run Task 1 (Scraping)
 python scrape.py
 
-Step 3: Run EDA
+▶️ Run Task 2 (EDA)
 python eda.py
 
-🙌 Acknowledgement
+▶️ Run Task 3 (Visualizations)
+python data_visualization.py
 
-Thanks to CodeAlpha for the opportunity to learn and work on real-world data analytics tasks.
 
-🔥 Complete!
+All charts will be saved inside the visuals/ folder.
 
-This project satisfies the CodeAlpha requirements:
-✔ Scraping code
-✔ EDA code
-✔ GitHub repo
-✔ LinkedIn post
-✔ Visuals included
+
+🙏 Acknowledgment
+
+Special thanks to CodeAlpha for providing a practical and hands-on learning opportunity in Data Analytics.
+
+🎉 Final Status: All Tasks Completed Successfully
+
+✔ Web Scraping
+✔ Data Cleaning
+✔ EDA
+✔ Visualization
+✔ GitHub Upload
+✔ LinkedIn Post
